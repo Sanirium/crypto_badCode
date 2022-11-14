@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js"></script>
+    <script src="./crypto/file.js"></script>
+    <title>Шифрование</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <h1>This is a encryption!</h1>
+        </div>
+    </header>
+
+    <!-- Тело -->
+    <main>
+        <div class="container">
+            <div class="textcols">
+                <div class="textcols-item">
+                    <h2>Шифрование</h2>
+                    <textarea placeholder="Введите текст для шифрования" class="cypher__text" name="text"></textarea> 
+                    <!-- <p>Введите текст для шифрования</p> -->
+                    <input type="tel" class="key btn" placeholder="Вставьте ключ">
+                    <button class="btn">Зашифровать</button>
+                    <label for="file-cypher" class="btn">Импортировать</label>
+                    <input type="file" class="file" id="file-cypher" name="fileReadCypher">
+                    
+                </div>
+                <div class="textcols-item">
+                    <h2>Расшифрование</h2>
+                    <textarea placeholder="Введите текст для расшифрования" class="decypher__text" name="text"></textarea>
+                    <!-- <p>Введите текст для расшифрования</p> -->
+                    <input type="tel" class="decypher__key btn" placeholder="Вставьте ключ">
+                    <button class="btn">Расшифровать</button>         
+                    <label for="file-decypher" class="btn">Импортировать</label>
+                    <input type="file" class="file" id="file-decypher" name="fileReadCypher">
+                    
+                </div>
+            </div>  
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+</body>
+</html>
